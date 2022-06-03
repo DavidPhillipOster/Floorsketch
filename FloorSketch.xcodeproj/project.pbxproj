@@ -38,9 +38,6 @@
 		6339A17B1C39E7B20048A619 /* SKTError.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6339A1671C39E7B20048A619 /* SKTError.strings */; };
 		6339A17F1C39E7B20048A619 /* FloorSketch.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 6339A16C1C39E7B20048A619 /* FloorSketch.sdef */; };
 		6339A1811C39E7B20048A619 /* ToolPalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6339A16E1C39E7B20048A619 /* ToolPalette.xib */; };
-		6339A1921C3B7AFF0048A619 /* GDataDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A18E1C3B7AFF0048A619 /* GDataDefines.h */; };
-		6339A1931C3B7AFF0048A619 /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A1901C3B7AFF0048A619 /* GDataXMLNode.h */; };
-		6339A1941C3B7AFF0048A619 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339A1911C3B7AFF0048A619 /* GDataXMLNode.m */; };
 		633ADBA81C40854700BCA626 /* SKTAlignCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 633ADBA71C40854700BCA626 /* SKTAlignCommand.m */; };
 		634E925A25C0B4CB00DD59AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634E925925C0B4CB00DD59AE /* Images.xcassets */; };
 		6375A4A525CA452300E758CA /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6375A4A425CA452300E758CA /* UniformTypeIdentifiers.framework */; };
@@ -139,9 +136,6 @@
 		6339A16C1C39E7B20048A619 /* FloorSketch.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FloorSketch.sdef; sourceTree = "<group>"; };
 		6339A16E1C39E7B20048A619 /* ToolPalette.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolPalette.xib; sourceTree = "<group>"; };
 		6339A18C1C3ACDD40048A619 /* SKTInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SKTInfo.plist; sourceTree = "<group>"; };
-		6339A18E1C3B7AFF0048A619 /* GDataDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataDefines.h; sourceTree = "<group>"; };
-		6339A1901C3B7AFF0048A619 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
-		6339A1911C3B7AFF0048A619 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 		633ADBA71C40854700BCA626 /* SKTAlignCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAlignCommand.m; sourceTree = "<group>"; };
 		634E925925C0B4CB00DD59AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		634E926125C0BDEA00DD59AE /* Log.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Log.md; sourceTree = "<group>"; };
@@ -228,7 +222,6 @@
 			children = (
 				632AE9DC1C42E16100C15645 /* Documentation */,
 				6339A10F1C39E72F0048A619 /* Classes */,
-				6339A18D1C3B7AFF0048A619 /* GDataPartial */,
 				6339A1541C39E7B20048A619 /* Resources */,
 				63EF61AA25C1D45E00392D9E /* Frameworks */,
 				20846A42FE943C2411CA2CEA /* Products */,
@@ -308,24 +301,6 @@
 				6339A16E1C39E7B20048A619 /* ToolPalette.xib */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		6339A18D1C3B7AFF0048A619 /* GDataPartial */ = {
-			isa = PBXGroup;
-			children = (
-				6339A18E1C3B7AFF0048A619 /* GDataDefines.h */,
-				6339A18F1C3B7AFF0048A619 /* XMLSupport */,
-			);
-			path = GDataPartial;
-			sourceTree = "<group>";
-		};
-		6339A18F1C3B7AFF0048A619 /* XMLSupport */ = {
-			isa = PBXGroup;
-			children = (
-				6339A1901C3B7AFF0048A619 /* GDataXMLNode.h */,
-				6339A1911C3B7AFF0048A619 /* GDataXMLNode.m */,
-			);
-			path = XMLSupport;
 			sourceTree = "<group>";
 		};
 		6394DD701C40678B0041E7AD /* ScriptCommand */ = {
@@ -439,7 +414,6 @@
 				639DD65E1C3C029700E75D10 /* SKTDocumentSVG.h in Headers */,
 				6339A1351C39E72F0048A619 /* SKTDocument.h in Headers */,
 				63D368931C3F03CB00F777E6 /* SKTImage.h in Headers */,
-				6339A1921C3B7AFF0048A619 /* GDataDefines.h in Headers */,
 				63D368981C3F03CB00F777E6 /* SKTPathAtom.h in Headers */,
 				6397F8DC1C3D892200CFAD51 /* SKTPath.h in Headers */,
 				63D3688D1C3F03CB00F777E6 /* SKTGraphic.h in Headers */,
@@ -449,7 +423,6 @@
 				6339A13B1C39E72F0048A619 /* SKTGraphicView.h in Headers */,
 				6339A13D1C39E72F0048A619 /* SKTGrid.h in Headers */,
 				63D3689C1C3F03CB00F777E6 /* SKTRectangle.h in Headers */,
-				6339A1931C3B7AFF0048A619 /* GDataXMLNode.h in Headers */,
 				63D3689A1C3F03CB00F777E6 /* SKTPoly.h in Headers */,
 				6339A1481C39E72F0048A619 /* SKTRenderingView.h in Headers */,
 				6329555825C5DB0B007ED8FC /* SKTPathScanner.h in Headers */,
@@ -571,7 +544,6 @@
 				6339A13C1C39E72F0048A619 /* SKTGraphicView.m in Sources */,
 				63D368631C3ED32400F777E6 /* NSColor_SKTScripting.m in Sources */,
 				633ADBA81C40854700BCA626 /* SKTAlignCommand.m in Sources */,
-				6339A1941C3B7AFF0048A619 /* GDataXMLNode.m in Sources */,
 				63D368691C3ED3DD00F777E6 /* NSArray_SKT.m in Sources */,
 				6339A1361C39E72F0048A619 /* SKTDocument.m in Sources */,
 				6339A1441C39E72F0048A619 /* SKTMain.m in Sources */,

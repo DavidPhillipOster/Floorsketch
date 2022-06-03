@@ -3,7 +3,6 @@
 */
 #import "SKTDocumentSVG.h"
 
-#import "GDataXMLNode.h"
 #import "NSArray_SKT.h"
 #import "NSColor_SKT.h"
 #import "SKTEllipse.h"
@@ -17,10 +16,10 @@
 
 
 
-@interface GDataXMLNode(SVG)
+@interface NSXMLNode(SVG)
 - (CGFloat)svgFloatValue;
 @end
-@implementation GDataXMLNode(SVG)
+@implementation NSXMLNode(SVG)
 - (CGFloat)svgFloatValue {
   float result = 0;
   NSScanner *scanner = [[NSScanner alloc] initWithString:[self stringValue]];
@@ -129,7 +128,7 @@ static float PositiveFloatValue(NSString *value) {
 }
 
 // TODO: this should loop over the attributes, looking each one up. Not do multiple linear searches.
-static NSMutableDictionary *StylePropertiesFromAttributes(GDataXMLElement *element) {
+static NSMutableDictionary *StylePropertiesFromAttributes(NSXMLElement *element) {
   NSMutableDictionary *result = [NSMutableDictionary dictionary];
   NSString *s;
   float n;
@@ -196,7 +195,7 @@ static NSMutableDictionary *StylePropertiesFromAttributes(GDataXMLElement *eleme
   return result;
 }
 
-static NSDictionary *CirclePropertiesOfElement(GDataXMLElement *element) {
+static NSDictionary *CirclePropertiesOfElement(NSXMLElement *element) {
   CGFloat cx = [[element attributeForName:@"cx"] svgFloatValue];
   CGFloat cy = [[element attributeForName:@"cy"] svgFloatValue];
   CGFloat r = [[element attributeForName:@"r"] svgFloatValue];
@@ -210,19 +209,19 @@ static NSDictionary *CirclePropertiesOfElement(GDataXMLElement *element) {
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfCircle(GDataXMLElement *element) {
+static id GraphicOfCircle(NSXMLElement *element) {
   NSDictionary *props = CirclePropertiesOfElement(element);
   id result = [[SKTEllipse alloc] initWithProperties:props];
   return result;
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfDesc(GDataXMLElement *element) {
+static id GraphicOfDesc(NSXMLElement *element) {
   id result = @NO;
   return result;
 }
 
-static NSDictionary *EllipsePropertiesOfElement(GDataXMLElement *element) {
+static NSDictionary *EllipsePropertiesOfElement(NSXMLElement *element) {
   CGFloat cx = [[element attributeForName:@"cx"] svgFloatValue];
   CGFloat cy = [[element attributeForName:@"cy"] svgFloatValue];
   CGFloat rx = [[element attributeForName:@"rx"] svgFloatValue];
@@ -237,20 +236,20 @@ static NSDictionary *EllipsePropertiesOfElement(GDataXMLElement *element) {
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfEllipse(GDataXMLElement *element) {
+static id GraphicOfEllipse(NSXMLElement *element) {
   NSDictionary *props = EllipsePropertiesOfElement(element);
   id result = [[SKTEllipse alloc] initWithProperties:props];
   return result;
 }
 
-static NSDictionary *GroupPropertiesOfElement(GDataXMLElement *element) {
+static NSDictionary *GroupPropertiesOfElement(NSXMLElement *element) {
   NSMutableDictionary *result = StylePropertiesFromAttributes(element);
   // TODO: more here: GroupPropertiesOfElement
   return result;
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfGroup(GDataXMLElement *element) {
+static id GraphicOfGroup(NSXMLElement *element) {
   NSDictionary *props = GroupPropertiesOfElement(element);
   SKTGroup *result = [[SKTGroup alloc] initWithProperties:props];
   [result setGraphics:[SKTDocument graphicsFromContainer:element error:NULL]];
@@ -258,7 +257,7 @@ static id GraphicOfGroup(GDataXMLElement *element) {
   return result;
 }
 
-static NSDictionary *ImagePropertiesOfElement(GDataXMLElement *element) {
+static NSDictionary *ImagePropertiesOfElement(NSXMLElement *element) {
   NSMutableDictionary *result = StylePropertiesFromAttributes(element);
   NSString *s = [[element attributeForName:@"width"] stringValue];
   if (s.length) {
@@ -296,13 +295,13 @@ static NSDictionary *ImagePropertiesOfElement(GDataXMLElement *element) {
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfImage(GDataXMLElement *element) {
+static id GraphicOfImage(NSXMLElement *element) {
   NSDictionary *props = ImagePropertiesOfElement(element);
   SKTImage *result = [[SKTImage alloc] initWithProperties:props];
   return result;
 }
 
-static NSDictionary *LinePropertiesOfElement(GDataXMLElement *element) {
+static NSDictionary *LinePropertiesOfElement(NSXMLElement *element) {
   CGFloat x = [[element attributeForName:@"x1"] svgFloatValue];
   CGFloat y = [[element attributeForName:@"y1"] svgFloatValue];
   CGFloat x2 = [[element attributeForName:@"x2"] svgFloatValue];
@@ -314,13 +313,13 @@ static NSDictionary *LinePropertiesOfElement(GDataXMLElement *element) {
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfLine(GDataXMLElement *element) {
+static id GraphicOfLine(NSXMLElement *element) {
   NSDictionary *props = LinePropertiesOfElement(element);
   id result = [[SKTLine alloc] initWithProperties:props];
   return result;
 }
 
-static NSMutableDictionary *PathPropertiesOfElement(GDataXMLElement *element) {
+static NSMutableDictionary *PathPropertiesOfElement(NSXMLElement *element) {
   NSMutableDictionary *result = StylePropertiesFromAttributes(element);
   NSString *s = [[element attributeForName:@"d"] stringValue];
   if ([s respondsToSelector:@selector(characterAtIndex:)]) {
@@ -330,26 +329,26 @@ static NSMutableDictionary *PathPropertiesOfElement(GDataXMLElement *element) {
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfPath(GDataXMLElement *element) {
+static id GraphicOfPath(NSXMLElement *element) {
   NSMutableDictionary *props = PathPropertiesOfElement(element);
   id result = [[SKTPath alloc] initWithProperties:props];
   return result;
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfPattern(GDataXMLElement *element) {
+static id GraphicOfPattern(NSXMLElement *element) {
   id result = @NO;
   return result;
 }
 
-static NSMutableDictionary *PolyPropertiesOfElement(GDataXMLElement *element) {
+static NSMutableDictionary *PolyPropertiesOfElement(NSXMLElement *element) {
   NSMutableDictionary *result = StylePropertiesFromAttributes(element);
   result[SKTPolyPoints] = [[element attributeForName:@"points"] stringValue];
   return result;
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfPolygon(GDataXMLElement *element) {
+static id GraphicOfPolygon(NSXMLElement *element) {
   NSMutableDictionary *props = PolyPropertiesOfElement(element);
   props[SKTGraphicClosed] = @YES;
   SKTPoly *result = [[SKTPoly alloc] initWithProperties:props];
@@ -360,7 +359,7 @@ static id GraphicOfPolygon(GDataXMLElement *element) {
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfPolyline(GDataXMLElement *element) {
+static id GraphicOfPolyline(NSXMLElement *element) {
   NSDictionary *props = PolyPropertiesOfElement(element);
   SKTPoly *result = [[SKTPoly alloc] initWithProperties:props];
   if (nil == result.strokeColor) {
@@ -369,7 +368,7 @@ static id GraphicOfPolyline(GDataXMLElement *element) {
   return result;
 }
 
-static NSDictionary *RectPropertiesOfElement(GDataXMLElement *element) {
+static NSDictionary *RectPropertiesOfElement(NSXMLElement *element) {
   CGFloat x = [[element attributeForName:@"x"] svgFloatValue];
   CGFloat y = [[element attributeForName:@"y"] svgFloatValue];
   CGFloat width = [[element attributeForName:@"width"] svgFloatValue];
@@ -384,25 +383,25 @@ static NSDictionary *RectPropertiesOfElement(GDataXMLElement *element) {
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfRect(GDataXMLElement *element) {
+static id GraphicOfRect(NSXMLElement *element) {
   NSDictionary *props = RectPropertiesOfElement(element);
   id result = [[SKTRectangle alloc] initWithProperties:props];
   return result;
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfStyle(GDataXMLElement *element) {
+static id GraphicOfStyle(NSXMLElement *element) {
   id result = @NO;
   return result;
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfSymbol(GDataXMLElement *element) {
+static id GraphicOfSymbol(NSXMLElement *element) {
   id result = @NO;
   return result;
 }
 
-static NSDictionary *TextPropertiesOfElement(GDataXMLElement *element) {
+static NSDictionary *TextPropertiesOfElement(NSXMLElement *element) {
   CGFloat x = [[element attributeForName:@"x"] svgFloatValue];
   CGFloat y = [[element attributeForName:@"y"] svgFloatValue];
   CGFloat width = [[element attributeForName:@"width"] svgFloatValue];
@@ -431,7 +430,7 @@ static NSDictionary *TextPropertiesOfElement(GDataXMLElement *element) {
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfText(GDataXMLElement *element) {
+static id GraphicOfText(NSXMLElement *element) {
   NSDictionary *props = TextPropertiesOfElement(element);
   SKTText *result = [[SKTText alloc] initWithProperties:props];
   CGRect bounds = [result bounds];
@@ -441,21 +440,21 @@ static id GraphicOfText(GDataXMLElement *element) {
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfTitle(GDataXMLElement *element) {
+static id GraphicOfTitle(NSXMLElement *element) {
   id result = @NO;
   return result;
 }
 
 // return nil to signal parse error. return @NO to signal ignored.
-static id GraphicOfUse(GDataXMLElement *element) {
+static id GraphicOfUse(NSXMLElement *element) {
   id result = @NO;
   return result;
 }
 
 
-id GraphicOfElement(GDataXMLElement *element) {
+id GraphicOfElement(NSXMLElement *element) {
   id result = @NO;
-  if (GDataXMLElementKind == [element kind]) {
+  if (NSXMLElementKind == [element kind]) {
     NSString *name = [element localName];
     if ([name isEqual:@"circle"]) {
       result = GraphicOfCircle(element);
@@ -496,12 +495,12 @@ id GraphicOfElement(GDataXMLElement *element) {
 
 @implementation SKTDocument(SVG)
 
-+ (NSMutableArray *)graphicsFromContainer:(GDataXMLElement *)root error:(NSError **)outError {
++ (NSMutableArray *)graphicsFromContainer:(NSXMLElement *)root error:(NSError **)outError {
   NSUInteger count = [root childCount];
   NSMutableArray *graphics = [NSMutableArray array];
   // Parse from front to back so we can properly inherit styles. TODO: inherit styles
   for (NSUInteger i = 0; i < count; ++i) {
-    GDataXMLElement *element = (GDataXMLElement *)[root childAtIndex:(unsigned)i];
+    NSXMLElement *element = (NSXMLElement *)[root childAtIndex:(unsigned)i];
     id graphic = GraphicOfElement(element);
     if (graphic) {
       if ( ! [graphic isEqual:@NO]) {
@@ -518,8 +517,8 @@ id GraphicOfElement(GDataXMLElement *element) {
 - (NSArray *)graphicsSVGTypeFromData:(NSData *)data
                            printInfo:(NSPrintInfo **)outPrintInfo
                                error:(NSError **)outError {
-  GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:data options:0 error:outError];
-  GDataXMLElement *root = [doc rootElement];
+  NSXMLDocument *doc = [[NSXMLDocument alloc] initWithData:data options:0 error:outError];
+  NSXMLElement *root = [doc rootElement];
   NSArray *graphics = nil;
   if ([[root localName] isEqual:@"svg"]) {
     graphics = [[self class] graphicsFromContainer:root error:outError];

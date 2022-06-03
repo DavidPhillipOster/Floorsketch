@@ -4,12 +4,12 @@
 
 #import "SKTDocument.h"
 
-@class GDataXMLElement;
+@class NSXMLElement;
 
 @interface SKTDocument(SVG)
 - (NSArray *)graphicsSVGTypeFromData:(NSData *)data
                            printInfo:(NSPrintInfo **)outPrintInfo
                                error:(NSError **)outError ;
 
-+ (NSMutableArray *)graphicsFromContainer:(GDataXMLElement *)root error:(NSError **)outError;
++ (NSMutableArray *)graphicsFromContainer:(NSXMLElement *)root error:(NSError **)outError;
 @end
