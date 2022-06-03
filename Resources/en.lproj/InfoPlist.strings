@@ -1,0 +1,19 @@
+/* For the app's menu bar. */
+CFBundleName = "FloorSketch";
+
+/* For the Finder's info panel. */
+CFBundleGetInfoString = "0.1,  © 1998-2012, Apple Inc. &  © 2021 David Phillip Oster";
+
+/* For the app's About panel. */
+NSHumanReadableCopyright = "Copyright © 1998-2012, Apple Inc.\nAdditional material Copyright © 2021 David Phillip Oster";
+
+/* On Mac OS 10.5 it's the localization of the matching UTTypeDescription entry in the Info.plist. The NSPDFPboardType and NSTIFFPboardType localizations are only used on 10.4, by Cocoa. On 10.5 the corresponding CFBundleDocumentTypes entries are pretty much ignored, because this app uses UTIs instead. */
+"FloorSketch document" = "FloorSketch document";
+
+"com.adobe.pdf" = "Portable Document Format (PDF)";
+
+"public.tiff" = "Tagged Image File Format (TIFF) image";
+
+"public.svg-image" = "Scalable Vector Graphics (SVG)";
+
+"public.png" = "Portable Network Graphics (PNG)";

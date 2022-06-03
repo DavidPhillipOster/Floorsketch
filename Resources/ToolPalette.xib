@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SKTToolPaletteController">
+            <connections>
+                <outlet property="toolButtons" destination="9" id="15"/>
+                <outlet property="window" destination="5" id="7"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="5" userLabel="Panel" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
+            <rect key="contentRect" x="5" y="771" width="38" height="230"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
+            <view key="contentView" id="6">
+                <rect key="frame" x="0.0" y="0.0" width="38" height="230"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <matrix verticalHuggingPriority="750" fixedFrame="YES" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                        <rect key="frame" x="0.0" y="0.0" width="38" height="228"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <size key="cellSize" width="38" height="38"/>
+                        <buttonCell key="prototype" type="square" title="Button" bezelStyle="shadowlessSquare" image="Arrow" imagePosition="only" alignment="center" borderStyle="border" tag="-1" inset="2" id="18">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <cells>
+                            <column>
+                                <buttonCell type="square" title="Button" bezelStyle="shadowlessSquare" image="Arrow" imagePosition="only" alignment="center" alternateImage="Arrow8" state="on" borderStyle="border" inset="2" id="11">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="showsStateBy">
+                                            <integer key="value" value="13"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </buttonCell>
+                                <buttonCell type="square" title="Button" bezelStyle="shadowlessSquare" image="ArrowNode" imagePosition="only" alignment="center" alternateImage="ArrowNode8" borderStyle="border" tag="1" inset="2" id="13">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="showsStateBy">
+                                            <integer key="value" value="13"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </buttonCell>
+                                <buttonCell type="square" title="Button" bezelStyle="shadowlessSquare" image="Exterior" imagePosition="only" alignment="center" alternateImage="Exterior8" borderStyle="border" tag="2" inset="2" id="12">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="showsStateBy">
+                                            <integer key="value" value="13"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </buttonCell>
+                                <buttonCell type="square" title="Button" bezelStyle="shadowlessSquare" image="Rectangle" imagePosition="only" alignment="center" alternateImage="Rectangle8" borderStyle="border" tag="3" inset="2" id="10">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="showsStateBy">
+                                            <integer key="value" value="13"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </buttonCell>
+                                <buttonCell type="square" title="Button" bezelStyle="shadowlessSquare" image="Line" imagePosition="only" alignment="center" alternateImage="Line8" borderStyle="border" tag="4" inset="2" id="14">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="showsStateBy">
+                                            <integer key="value" value="13"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </buttonCell>
+                                <buttonCell type="square" title="Button" bezelStyle="shadowlessSquare" image="TextGraphic" imagePosition="only" alignment="center" alternateImage="TextGraphic8" borderStyle="border" tag="-1" inset="2" id="Rth-ve-M68">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="showsStateBy">
+                                            <integer key="value" value="13"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </buttonCell>
+                            </column>
+                        </cells>
+                        <connections>
+                            <action selector="selectToolAction:" target="-2" id="16"/>
+                        </connections>
+                    </matrix>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="8"/>
+            </connections>
+            <point key="canvasLocation" x="313" y="396"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Arrow" width="32" height="32"/>
+        <image name="Arrow8" width="32" height="32"/>
+        <image name="ArrowNode" width="32" height="32"/>
+        <image name="ArrowNode8" width="32" height="32"/>
+        <image name="Exterior" width="32" height="32"/>
+        <image name="Exterior8" width="32" height="32"/>
+        <image name="Line" width="32" height="32"/>
+        <image name="Line8" width="32" height="32"/>
+        <image name="Rectangle" width="32" height="32"/>
+        <image name="Rectangle8" width="32" height="32"/>
+        <image name="TextGraphic" width="32" height="32"/>
+        <image name="TextGraphic8" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,15 @@
+/*
+  GraphicClassNames.strings
+
+ Additional material Copyright © 2016 David Phillip Oster. All Rights Reserved.
+For undo menu items.
+*/
+"SKTEllipse" = "Ellipse";
+"SKTLine" = "Line";
+"SKTImage"= "Image";
+"SKTGroup"= "Group";
+"SKTPath" = "Path";
+"SKTPoly" = "Polygon";
+"SKTRectangle" = "Rectangle";
+"SKTText" = "Text";
+"SKTVertex" = "Vertex";

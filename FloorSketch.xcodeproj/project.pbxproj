@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6329555825C5DB0B007ED8FC /* SKTPathScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 6329555625C5DB0B007ED8FC /* SKTPathScanner.h */; };
+		6329555925C5DB0B007ED8FC /* SKTPathScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6329555725C5DB0B007ED8FC /* SKTPathScanner.m */; };
+		6339A1311C39E72F0048A619 /* SKTAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A1101C39E72F0048A619 /* SKTAppDelegate.h */; };
+		6339A1321C39E72F0048A619 /* SKTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339A1111C39E72F0048A619 /* SKTAppDelegate.m */; };
+		6339A1351C39E72F0048A619 /* SKTDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A1141C39E72F0048A619 /* SKTDocument.h */; };
+		6339A1361C39E72F0048A619 /* SKTDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339A1151C39E72F0048A619 /* SKTDocument.m */; };
+		6339A1371C39E72F0048A619 /* SKTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A1161C39E72F0048A619 /* SKTError.h */; };
+		6339A1381C39E72F0048A619 /* SKTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339A1171C39E72F0048A619 /* SKTError.m */; };
+		6339A13B1C39E72F0048A619 /* SKTGraphicView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A11A1C39E72F0048A619 /* SKTGraphicView.h */; };
+		6339A13C1C39E72F0048A619 /* SKTGraphicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339A11B1C39E72F0048A619 /* SKTGraphicView.m */; };
+		6339A13D1C39E72F0048A619 /* SKTGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A11C1C39E72F0048A619 /* SKTGrid.h */; };
+		6339A13E1C39E72F0048A619 /* SKTGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339A11D1C39E72F0048A619 /* SKTGrid.m */; };
+		6339A1441C39E72F0048A619 /* SKTMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339A1231C39E72F0048A619 /* SKTMain.m */; };
+		6339A1451C39E72F0048A619 /* SKTPrefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A1241C39E72F0048A619 /* SKTPrefix.h */; };
+		6339A1481C39E72F0048A619 /* SKTRenderingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A1271C39E72F0048A619 /* SKTRenderingView.h */; };
+		6339A1491C39E72F0048A619 /* SKTRenderingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339A1281C39E72F0048A619 /* SKTRenderingView.m */; };
+		6339A14C1C39E72F0048A619 /* SKTToolPaletteController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A12B1C39E72F0048A619 /* SKTToolPaletteController.h */; };
+		6339A14D1C39E72F0048A619 /* SKTToolPaletteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339A12C1C39E72F0048A619 /* SKTToolPaletteController.m */; };
+		6339A14E1C39E72F0048A619 /* SKTWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A12D1C39E72F0048A619 /* SKTWindowController.h */; };
+		6339A14F1C39E72F0048A619 /* SKTWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339A12E1C39E72F0048A619 /* SKTWindowController.m */; };
+		6339A1501C39E72F0048A619 /* SKTZoomingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A12F1C39E72F0048A619 /* SKTZoomingScrollView.h */; };
+		6339A1511C39E72F0048A619 /* SKTZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339A1301C39E72F0048A619 /* SKTZoomingScrollView.m */; };
+		6339A1701C39E7B20048A619 /* FloorSketch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6339A1561C39E7B20048A619 /* FloorSketch.xib */; };
+		6339A1711C39E7B20048A619 /* GridPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6339A1581C39E7B20048A619 /* GridPanel.xib */; };
+		6339A1721C39E7B20048A619 /* Inspector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6339A15A1C39E7B20048A619 /* Inspector.xib */; };
+		6339A1731C39E7B20048A619 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6339A15C1C39E7B20048A619 /* Preferences.xib */; };
+		6339A1781C39E7B20048A619 /* DrawWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6339A1621C39E7B20048A619 /* DrawWindow.xib */; };
+		6339A1791C39E7B20048A619 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6339A1631C39E7B20048A619 /* InfoPlist.strings */; };
+		6339A17B1C39E7B20048A619 /* SKTError.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6339A1671C39E7B20048A619 /* SKTError.strings */; };
+		6339A17F1C39E7B20048A619 /* FloorSketch.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 6339A16C1C39E7B20048A619 /* FloorSketch.sdef */; };
+		6339A1811C39E7B20048A619 /* ToolPalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6339A16E1C39E7B20048A619 /* ToolPalette.xib */; };
+		6339A1921C3B7AFF0048A619 /* GDataDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A18E1C3B7AFF0048A619 /* GDataDefines.h */; };
+		6339A1931C3B7AFF0048A619 /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6339A1901C3B7AFF0048A619 /* GDataXMLNode.h */; };
+		6339A1941C3B7AFF0048A619 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6339A1911C3B7AFF0048A619 /* GDataXMLNode.m */; };
+		633ADBA81C40854700BCA626 /* SKTAlignCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 633ADBA71C40854700BCA626 /* SKTAlignCommand.m */; };
+		634E925A25C0B4CB00DD59AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634E925925C0B4CB00DD59AE /* Images.xcassets */; };
+		6375A4A525CA452300E758CA /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6375A4A425CA452300E758CA /* UniformTypeIdentifiers.framework */; };
+		6394DD741C40678B0041E7AD /* SKTUngroupCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 6394DD721C40678B0041E7AD /* SKTUngroupCommand.m */; };
+		6397F8DC1C3D892200CFAD51 /* SKTPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 6397F8DA1C3D892200CFAD51 /* SKTPath.h */; };
+		639DD65E1C3C029700E75D10 /* SKTDocumentSVG.h in Headers */ = {isa = PBXBuildFile; fileRef = 639DD65C1C3C029700E75D10 /* SKTDocumentSVG.h */; };
+		639DD65F1C3C029700E75D10 /* SKTDocumentSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = 639DD65D1C3C029700E75D10 /* SKTDocumentSVG.m */; };
+		63D368631C3ED32400F777E6 /* NSColor_SKTScripting.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D368621C3ED32400F777E6 /* NSColor_SKTScripting.m */; };
+		63D368681C3ED3DD00F777E6 /* NSArray_SKT.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D368641C3ED3DD00F777E6 /* NSArray_SKT.h */; };
+		63D368691C3ED3DD00F777E6 /* NSArray_SKT.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D368651C3ED3DD00F777E6 /* NSArray_SKT.m */; };
+		63D3686A1C3ED3DD00F777E6 /* NSColor_SKT.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D368661C3ED3DD00F777E6 /* NSColor_SKT.h */; };
+		63D3686B1C3ED3DD00F777E6 /* NSColor_SKT.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D368671C3ED3DD00F777E6 /* NSColor_SKT.m */; };
+		63D368721C3EFF8300F777E6 /* GraphicClassNames.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63D368701C3EFF8300F777E6 /* GraphicClassNames.strings */; };
+		63D3688B1C3F03CB00F777E6 /* SKTEllipse.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D368741C3F03CB00F777E6 /* SKTEllipse.h */; };
+		63D3688C1C3F03CB00F777E6 /* SKTEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D368751C3F03CB00F777E6 /* SKTEllipse.m */; };
+		63D3688D1C3F03CB00F777E6 /* SKTGraphic.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D368761C3F03CB00F777E6 /* SKTGraphic.h */; };
+		63D3688E1C3F03CB00F777E6 /* SKTGraphic.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D368771C3F03CB00F777E6 /* SKTGraphic.m */; };
+		63D3688F1C3F03CB00F777E6 /* SKTGraphicsOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D368781C3F03CB00F777E6 /* SKTGraphicsOwner.h */; };
+		63D368901C3F03CB00F777E6 /* SKTGraphicsOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D368791C3F03CB00F777E6 /* SKTGraphicsOwner.m */; };
+		63D368911C3F03CB00F777E6 /* SKTGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D3687A1C3F03CB00F777E6 /* SKTGroup.h */; };
+		63D368921C3F03CB00F777E6 /* SKTGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D3687B1C3F03CB00F777E6 /* SKTGroup.m */; };
+		63D368931C3F03CB00F777E6 /* SKTImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D3687C1C3F03CB00F777E6 /* SKTImage.h */; };
+		63D368941C3F03CB00F777E6 /* SKTImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D3687D1C3F03CB00F777E6 /* SKTImage.m */; };
+		63D368951C3F03CB00F777E6 /* SKTLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D3687E1C3F03CB00F777E6 /* SKTLine.h */; };
+		63D368961C3F03CB00F777E6 /* SKTLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D3687F1C3F03CB00F777E6 /* SKTLine.m */; };
+		63D368971C3F03CB00F777E6 /* SKTPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D368801C3F03CB00F777E6 /* SKTPath.m */; };
+		63D368981C3F03CB00F777E6 /* SKTPathAtom.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D368811C3F03CB00F777E6 /* SKTPathAtom.h */; };
+		63D368991C3F03CB00F777E6 /* SKTPathAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D368821C3F03CB00F777E6 /* SKTPathAtom.m */; };
+		63D3689A1C3F03CB00F777E6 /* SKTPoly.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D368831C3F03CB00F777E6 /* SKTPoly.h */; };
+		63D3689B1C3F03CB00F777E6 /* SKTPoly.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D368841C3F03CB00F777E6 /* SKTPoly.m */; };
+		63D3689C1C3F03CB00F777E6 /* SKTRectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D368851C3F03CB00F777E6 /* SKTRectangle.h */; };
+		63D3689D1C3F03CB00F777E6 /* SKTRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D368861C3F03CB00F777E6 /* SKTRectangle.m */; };
+		63D3689E1C3F03CB00F777E6 /* SKTText.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D368871C3F03CB00F777E6 /* SKTText.h */; };
+		63D3689F1C3F03CB00F777E6 /* SKTText.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D368881C3F03CB00F777E6 /* SKTText.m */; };
+		63D368A01C3F03CB00F777E6 /* SKTVertex.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D368891C3F03CB00F777E6 /* SKTVertex.h */; };
+		63D368A11C3F03CB00F777E6 /* SKTVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D3688A1C3F03CB00F777E6 /* SKTVertex.m */; };
+		63D4C25B1C3DB35400EE1EE3 /* Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C2521C3DB35400EE1EE3 /* Arrow.png */; };
+		63D4C25C1C3DB35400EE1EE3 /* Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C2531C3DB35400EE1EE3 /* Circle.png */; };
+		63D4C25D1C3DB35400EE1EE3 /* Circle8.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C2541C3DB35400EE1EE3 /* Circle8.png */; };
+		63D4C25E1C3DB35400EE1EE3 /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C2551C3DB35400EE1EE3 /* Cross.png */; };
+		63D4C25F1C3DB35400EE1EE3 /* Line.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C2561C3DB35400EE1EE3 /* Line.png */; };
+		63D4C2601C3DB35400EE1EE3 /* Line8.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C2571C3DB35400EE1EE3 /* Line8.png */; };
+		63D4C2611C3DB35400EE1EE3 /* Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C2581C3DB35400EE1EE3 /* Rectangle.png */; };
+		63D4C2621C3DB35400EE1EE3 /* Rectangle8.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C2591C3DB35400EE1EE3 /* Rectangle8.png */; };
+		63D4C2631C3DB35400EE1EE3 /* TextGraphic.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C25A1C3DB35400EE1EE3 /* TextGraphic.png */; };
+		63D4C2661C3DB8D000EE1EE3 /* Triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C2641C3DB8D000EE1EE3 /* Triangle.png */; };
+		63D4C2671C3DB8D000EE1EE3 /* Triangle8.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C2651C3DB8D000EE1EE3 /* Triangle8.png */; };
+		63D4C2691C3DBB1200EE1EE3 /* Arrow8.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C2681C3DBB1200EE1EE3 /* Arrow8.png */; };
+		63D4C26B1C3DBB1B00EE1EE3 /* TextGraphic8.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D4C26A1C3DBB1B00EE1EE3 /* TextGraphic8.png */; };
+		63EF619F25C0C94F00392D9E /* DocIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 63EF619E25C0C94F00392D9E /* DocIcon.icns */; };
+		63EF61A225C0CC6D00392D9E /* SVGIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 63EF61A125C0CC6D00392D9E /* SVGIcon.icns */; };
+		63EF61AC25C1D45E00392D9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EF61AB25C1D45E00392D9E /* Cocoa.framework */; };
+		63EF61B625C1DB4F00392D9E /* MenuItems.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63EF61B825C1DB4F00392D9E /* MenuItems.strings */; };
+		63EF61BA25C1DB5C00392D9E /* SKTZoomingScrollView.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63EF61BC25C1DB5C00392D9E /* SKTZoomingScrollView.strings */; };
+		63EF61BE25C1DB6100392D9E /* UndoStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63EF61C025C1DB6100392D9E /* UndoStrings.strings */; };
+		63EF61C825C22D5A00392D9E /* ZoomIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 63EF61C325C22D5A00392D9E /* ZoomIn.png */; };
+		63EF61C925C22D5A00392D9E /* ZoomOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 63EF61C425C22D5A00392D9E /* ZoomOut.png */; };
+		63EF61CA25C22D5A00392D9E /* NodeMove.png in Resources */ = {isa = PBXBuildFile; fileRef = 63EF61C525C22D5A00392D9E /* NodeMove.png */; };
+		63EF61CB25C22D5A00392D9E /* ArrowMove2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63EF61C625C22D5A00392D9E /* ArrowMove2.png */; };
+		63EF61CC25C22D5A00392D9E /* ArrowNode.png in Resources */ = {isa = PBXBuildFile; fileRef = 63EF61C725C22D5A00392D9E /* ArrowNode.png */; };
+		63EF61D125C3234700392D9E /* Exterior8.png in Resources */ = {isa = PBXBuildFile; fileRef = 63EF61CF25C3234700392D9E /* Exterior8.png */; };
+		63EF61D225C3234700392D9E /* Exterior.png in Resources */ = {isa = PBXBuildFile; fileRef = 63EF61D025C3234700392D9E /* Exterior.png */; };
+		63EF61D525C325B300392D9E /* ArrowNode8.png in Resources */ = {isa = PBXBuildFile; fileRef = 63EF61D425C325B300392D9E /* ArrowNode8.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38D54A7607D51A2A00514CB8 /* FloorSketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloorSketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6329555625C5DB0B007ED8FC /* SKTPathScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKTPathScanner.h; sourceTree = "<group>"; };
+		6329555725C5DB0B007ED8FC /* SKTPathScanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKTPathScanner.m; sourceTree = "<group>"; };
+		632AE9DD1C42E16100C15645 /* Copyright.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Copyright.txt; sourceTree = "<group>"; };
+		6339A1101C39E72F0048A619 /* SKTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAppDelegate.h; sourceTree = "<group>"; };
+		6339A1111C39E72F0048A619 /* SKTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAppDelegate.m; sourceTree = "<group>"; };
+		6339A1141C39E72F0048A619 /* SKTDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTDocument.h; sourceTree = "<group>"; };
+		6339A1151C39E72F0048A619 /* SKTDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTDocument.m; sourceTree = "<group>"; };
+		6339A1161C39E72F0048A619 /* SKTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTError.h; sourceTree = "<group>"; };
+		6339A1171C39E72F0048A619 /* SKTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTError.m; sourceTree = "<group>"; };
+		6339A11A1C39E72F0048A619 /* SKTGraphicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTGraphicView.h; sourceTree = "<group>"; };
+		6339A11B1C39E72F0048A619 /* SKTGraphicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTGraphicView.m; sourceTree = "<group>"; };
+		6339A11C1C39E72F0048A619 /* SKTGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTGrid.h; sourceTree = "<group>"; };
+		6339A11D1C39E72F0048A619 /* SKTGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTGrid.m; sourceTree = "<group>"; };
+		6339A1231C39E72F0048A619 /* SKTMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTMain.m; sourceTree = "<group>"; };
+		6339A1241C39E72F0048A619 /* SKTPrefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTPrefix.h; sourceTree = "<group>"; };
+		6339A1271C39E72F0048A619 /* SKTRenderingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTRenderingView.h; sourceTree = "<group>"; };
+		6339A1281C39E72F0048A619 /* SKTRenderingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTRenderingView.m; sourceTree = "<group>"; };
+		6339A12B1C39E72F0048A619 /* SKTToolPaletteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTToolPaletteController.h; sourceTree = "<group>"; };
+		6339A12C1C39E72F0048A619 /* SKTToolPaletteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTToolPaletteController.m; sourceTree = "<group>"; };
+		6339A12D1C39E72F0048A619 /* SKTWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTWindowController.h; sourceTree = "<group>"; };
+		6339A12E1C39E72F0048A619 /* SKTWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTWindowController.m; sourceTree = "<group>"; };
+		6339A12F1C39E72F0048A619 /* SKTZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTZoomingScrollView.h; sourceTree = "<group>"; };
+		6339A1301C39E72F0048A619 /* SKTZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTZoomingScrollView.m; sourceTree = "<group>"; };
+		6339A1571C39E7B20048A619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FloorSketch.xib; sourceTree = "<group>"; };
+		6339A1591C39E7B20048A619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GridPanel.xib; sourceTree = "<group>"; };
+		6339A15B1C39E7B20048A619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Inspector.xib; sourceTree = "<group>"; };
+		6339A15D1C39E7B20048A619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
+		6339A1621C39E7B20048A619 /* DrawWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawWindow.xib; sourceTree = "<group>"; };
+		6339A16C1C39E7B20048A619 /* FloorSketch.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FloorSketch.sdef; sourceTree = "<group>"; };
+		6339A16E1C39E7B20048A619 /* ToolPalette.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolPalette.xib; sourceTree = "<group>"; };
+		6339A18C1C3ACDD40048A619 /* SKTInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SKTInfo.plist; sourceTree = "<group>"; };
+		6339A18E1C3B7AFF0048A619 /* GDataDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataDefines.h; sourceTree = "<group>"; };
+		6339A1901C3B7AFF0048A619 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		6339A1911C3B7AFF0048A619 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		633ADBA71C40854700BCA626 /* SKTAlignCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAlignCommand.m; sourceTree = "<group>"; };
+		634E925925C0B4CB00DD59AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		634E926125C0BDEA00DD59AE /* Log.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Log.md; sourceTree = "<group>"; };
+		6375A4A425CA452300E758CA /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		6385361C245A2940007597BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GraphicClassNames.strings; sourceTree = "<group>"; };
+		6385361D245A2940007597BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6385361E245A2940007597BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SKTError.strings; sourceTree = "<group>"; };
+		6394DD721C40678B0041E7AD /* SKTUngroupCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTUngroupCommand.m; sourceTree = "<group>"; };
+		6397F8DA1C3D892200CFAD51 /* SKTPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTPath.h; sourceTree = "<group>"; };
+		639DD65C1C3C029700E75D10 /* SKTDocumentSVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTDocumentSVG.h; sourceTree = "<group>"; };
+		639DD65D1C3C029700E75D10 /* SKTDocumentSVG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTDocumentSVG.m; sourceTree = "<group>"; };
+		63D368621C3ED32400F777E6 /* NSColor_SKTScripting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSColor_SKTScripting.m; sourceTree = "<group>"; };
+		63D368641C3ED3DD00F777E6 /* NSArray_SKT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArray_SKT.h; sourceTree = "<group>"; };
+		63D368651C3ED3DD00F777E6 /* NSArray_SKT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArray_SKT.m; sourceTree = "<group>"; };
+		63D368661C3ED3DD00F777E6 /* NSColor_SKT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSColor_SKT.h; sourceTree = "<group>"; };
+		63D368671C3ED3DD00F777E6 /* NSColor_SKT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSColor_SKT.m; sourceTree = "<group>"; };
+		63D368741C3F03CB00F777E6 /* SKTEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTEllipse.h; sourceTree = "<group>"; };
+		63D368751C3F03CB00F777E6 /* SKTEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTEllipse.m; sourceTree = "<group>"; };
+		63D368761C3F03CB00F777E6 /* SKTGraphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTGraphic.h; sourceTree = "<group>"; };
+		63D368771C3F03CB00F777E6 /* SKTGraphic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTGraphic.m; sourceTree = "<group>"; };
+		63D368781C3F03CB00F777E6 /* SKTGraphicsOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTGraphicsOwner.h; sourceTree = "<group>"; };
+		63D368791C3F03CB00F777E6 /* SKTGraphicsOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTGraphicsOwner.m; sourceTree = "<group>"; };
+		63D3687A1C3F03CB00F777E6 /* SKTGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTGroup.h; sourceTree = "<group>"; };
+		63D3687B1C3F03CB00F777E6 /* SKTGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTGroup.m; sourceTree = "<group>"; };
+		63D3687C1C3F03CB00F777E6 /* SKTImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTImage.h; sourceTree = "<group>"; };
+		63D3687D1C3F03CB00F777E6 /* SKTImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTImage.m; sourceTree = "<group>"; };
+		63D3687E1C3F03CB00F777E6 /* SKTLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTLine.h; sourceTree = "<group>"; };
+		63D3687F1C3F03CB00F777E6 /* SKTLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTLine.m; sourceTree = "<group>"; };
+		63D368801C3F03CB00F777E6 /* SKTPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTPath.m; sourceTree = "<group>"; };
+		63D368811C3F03CB00F777E6 /* SKTPathAtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTPathAtom.h; sourceTree = "<group>"; };
+		63D368821C3F03CB00F777E6 /* SKTPathAtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTPathAtom.m; sourceTree = "<group>"; };
+		63D368831C3F03CB00F777E6 /* SKTPoly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTPoly.h; sourceTree = "<group>"; };
+		63D368841C3F03CB00F777E6 /* SKTPoly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTPoly.m; sourceTree = "<group>"; };
+		63D368851C3F03CB00F777E6 /* SKTRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTRectangle.h; sourceTree = "<group>"; };
+		63D368861C3F03CB00F777E6 /* SKTRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTRectangle.m; sourceTree = "<group>"; };
+		63D368871C3F03CB00F777E6 /* SKTText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTText.h; sourceTree = "<group>"; };
+		63D368881C3F03CB00F777E6 /* SKTText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTText.m; sourceTree = "<group>"; };
+		63D368891C3F03CB00F777E6 /* SKTVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTVertex.h; sourceTree = "<group>"; };
+		63D3688A1C3F03CB00F777E6 /* SKTVertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTVertex.m; sourceTree = "<group>"; };
+		63D4C2521C3DB35400EE1EE3 /* Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow.png; sourceTree = "<group>"; };
+		63D4C2531C3DB35400EE1EE3 /* Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle.png; sourceTree = "<group>"; };
+		63D4C2541C3DB35400EE1EE3 /* Circle8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle8.png; sourceTree = "<group>"; };
+		63D4C2551C3DB35400EE1EE3 /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross.png; sourceTree = "<group>"; };
+		63D4C2561C3DB35400EE1EE3 /* Line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Line.png; sourceTree = "<group>"; };
+		63D4C2571C3DB35400EE1EE3 /* Line8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Line8.png; sourceTree = "<group>"; };
+		63D4C2581C3DB35400EE1EE3 /* Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle.png; sourceTree = "<group>"; };
+		63D4C2591C3DB35400EE1EE3 /* Rectangle8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rectangle8.png; sourceTree = "<group>"; };
+		63D4C25A1C3DB35400EE1EE3 /* TextGraphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextGraphic.png; sourceTree = "<group>"; };
+		63D4C2641C3DB8D000EE1EE3 /* Triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Triangle.png; sourceTree = "<group>"; };
+		63D4C2651C3DB8D000EE1EE3 /* Triangle8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Triangle8.png; sourceTree = "<group>"; };
+		63D4C2681C3DBB1200EE1EE3 /* Arrow8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow8.png; sourceTree = "<group>"; };
+		63D4C26A1C3DBB1B00EE1EE3 /* TextGraphic8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextGraphic8.png; sourceTree = "<group>"; };
+		63EF619E25C0C94F00392D9E /* DocIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = DocIcon.icns; sourceTree = "<group>"; };
+		63EF61A125C0CC6D00392D9E /* SVGIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SVGIcon.icns; sourceTree = "<group>"; };
+		63EF61AB25C1D45E00392D9E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		63EF61B725C1DB4F00392D9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MenuItems.strings; sourceTree = "<group>"; };
+		63EF61BB25C1DB5C00392D9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SKTZoomingScrollView.strings; sourceTree = "<group>"; };
+		63EF61BF25C1DB6100392D9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UndoStrings.strings; sourceTree = "<group>"; };
+		63EF61C325C22D5A00392D9E /* ZoomIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomIn.png; sourceTree = "<group>"; };
+		63EF61C425C22D5A00392D9E /* ZoomOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomOut.png; sourceTree = "<group>"; };
+		63EF61C525C22D5A00392D9E /* NodeMove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NodeMove.png; sourceTree = "<group>"; };
+		63EF61C625C22D5A00392D9E /* ArrowMove2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowMove2.png; sourceTree = "<group>"; };
+		63EF61C725C22D5A00392D9E /* ArrowNode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowNode.png; sourceTree = "<group>"; };
+		63EF61CF25C3234700392D9E /* Exterior8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Exterior8.png; sourceTree = "<group>"; };
+		63EF61D025C3234700392D9E /* Exterior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Exterior.png; sourceTree = "<group>"; };
+		63EF61D425C325B300392D9E /* ArrowNode8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowNode8.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38D54A7207D51A2A00514CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6375A4A525CA452300E758CA /* UniformTypeIdentifiers.framework in Frameworks */,
+				63EF61AC25C1D45E00392D9E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A3ECED8FE888A39C02AAC07 /* FloorSketch */ = {
+			isa = PBXGroup;
+			children = (
+				632AE9DC1C42E16100C15645 /* Documentation */,
+				6339A10F1C39E72F0048A619 /* Classes */,
+				6339A18D1C3B7AFF0048A619 /* GDataPartial */,
+				6339A1541C39E7B20048A619 /* Resources */,
+				63EF61AA25C1D45E00392D9E /* Frameworks */,
+				20846A42FE943C2411CA2CEA /* Products */,
+			);
+			name = FloorSketch;
+			sourceTree = "<group>";
+		};
+		20846A42FE943C2411CA2CEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38D54A7607D51A2A00514CB8 /* FloorSketch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		632AE9DC1C42E16100C15645 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				632AE9DD1C42E16100C15645 /* Copyright.txt */,
+				634E926125C0BDEA00DD59AE /* Log.md */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		6339A10F1C39E72F0048A619 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				63D368611C3ED32400F777E6 /* Categories */,
+				63D368731C3F03CB00F777E6 /* Graphics */,
+				6394DD701C40678B0041E7AD /* ScriptCommand */,
+				6339A1101C39E72F0048A619 /* SKTAppDelegate.h */,
+				6339A1111C39E72F0048A619 /* SKTAppDelegate.m */,
+				6339A1141C39E72F0048A619 /* SKTDocument.h */,
+				6339A1151C39E72F0048A619 /* SKTDocument.m */,
+				639DD65C1C3C029700E75D10 /* SKTDocumentSVG.h */,
+				639DD65D1C3C029700E75D10 /* SKTDocumentSVG.m */,
+				6339A1161C39E72F0048A619 /* SKTError.h */,
+				6339A1171C39E72F0048A619 /* SKTError.m */,
+				6339A11A1C39E72F0048A619 /* SKTGraphicView.h */,
+				6339A11B1C39E72F0048A619 /* SKTGraphicView.m */,
+				6339A11C1C39E72F0048A619 /* SKTGrid.h */,
+				6339A11D1C39E72F0048A619 /* SKTGrid.m */,
+				6339A1231C39E72F0048A619 /* SKTMain.m */,
+				6339A1241C39E72F0048A619 /* SKTPrefix.h */,
+				6339A1271C39E72F0048A619 /* SKTRenderingView.h */,
+				6339A1281C39E72F0048A619 /* SKTRenderingView.m */,
+				6329555625C5DB0B007ED8FC /* SKTPathScanner.h */,
+				6329555725C5DB0B007ED8FC /* SKTPathScanner.m */,
+				6339A12B1C39E72F0048A619 /* SKTToolPaletteController.h */,
+				6339A12C1C39E72F0048A619 /* SKTToolPaletteController.m */,
+				6339A12D1C39E72F0048A619 /* SKTWindowController.h */,
+				6339A12E1C39E72F0048A619 /* SKTWindowController.m */,
+				6339A12F1C39E72F0048A619 /* SKTZoomingScrollView.h */,
+				6339A1301C39E72F0048A619 /* SKTZoomingScrollView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6339A1541C39E7B20048A619 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				634E925925C0B4CB00DD59AE /* Images.xcassets */,
+				6339A1561C39E7B20048A619 /* FloorSketch.xib */,
+				6339A1581C39E7B20048A619 /* GridPanel.xib */,
+				63D4C2511C3DB35400EE1EE3 /* Images */,
+				6339A15A1C39E7B20048A619 /* Inspector.xib */,
+				6339A15C1C39E7B20048A619 /* Preferences.xib */,
+				63D368701C3EFF8300F777E6 /* GraphicClassNames.strings */,
+				6339A1621C39E7B20048A619 /* DrawWindow.xib */,
+				6339A1631C39E7B20048A619 /* InfoPlist.strings */,
+				63EF61B825C1DB4F00392D9E /* MenuItems.strings */,
+				63EF61C025C1DB6100392D9E /* UndoStrings.strings */,
+				6339A1671C39E7B20048A619 /* SKTError.strings */,
+				63EF61BC25C1DB5C00392D9E /* SKTZoomingScrollView.strings */,
+				6339A18C1C3ACDD40048A619 /* SKTInfo.plist */,
+				6339A16C1C39E7B20048A619 /* FloorSketch.sdef */,
+				6339A16E1C39E7B20048A619 /* ToolPalette.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6339A18D1C3B7AFF0048A619 /* GDataPartial */ = {
+			isa = PBXGroup;
+			children = (
+				6339A18E1C3B7AFF0048A619 /* GDataDefines.h */,
+				6339A18F1C3B7AFF0048A619 /* XMLSupport */,
+			);
+			path = GDataPartial;
+			sourceTree = "<group>";
+		};
+		6339A18F1C3B7AFF0048A619 /* XMLSupport */ = {
+			isa = PBXGroup;
+			children = (
+				6339A1901C3B7AFF0048A619 /* GDataXMLNode.h */,
+				6339A1911C3B7AFF0048A619 /* GDataXMLNode.m */,
+			);
+			path = XMLSupport;
+			sourceTree = "<group>";
+		};
+		6394DD701C40678B0041E7AD /* ScriptCommand */ = {
+			isa = PBXGroup;
+			children = (
+				633ADBA71C40854700BCA626 /* SKTAlignCommand.m */,
+				6394DD721C40678B0041E7AD /* SKTUngroupCommand.m */,
+			);
+			path = ScriptCommand;
+			sourceTree = "<group>";
+		};
+		63D368611C3ED32400F777E6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				63D368641C3ED3DD00F777E6 /* NSArray_SKT.h */,
+				63D368651C3ED3DD00F777E6 /* NSArray_SKT.m */,
+				63D368661C3ED3DD00F777E6 /* NSColor_SKT.h */,
+				63D368671C3ED3DD00F777E6 /* NSColor_SKT.m */,
+				63D368621C3ED32400F777E6 /* NSColor_SKTScripting.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		63D368731C3F03CB00F777E6 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				63D368741C3F03CB00F777E6 /* SKTEllipse.h */,
+				63D368751C3F03CB00F777E6 /* SKTEllipse.m */,
+				63D368761C3F03CB00F777E6 /* SKTGraphic.h */,
+				63D368771C3F03CB00F777E6 /* SKTGraphic.m */,
+				63D368781C3F03CB00F777E6 /* SKTGraphicsOwner.h */,
+				63D368791C3F03CB00F777E6 /* SKTGraphicsOwner.m */,
+				63D3687A1C3F03CB00F777E6 /* SKTGroup.h */,
+				63D3687B1C3F03CB00F777E6 /* SKTGroup.m */,
+				63D3687C1C3F03CB00F777E6 /* SKTImage.h */,
+				63D3687D1C3F03CB00F777E6 /* SKTImage.m */,
+				63D3687E1C3F03CB00F777E6 /* SKTLine.h */,
+				63D3687F1C3F03CB00F777E6 /* SKTLine.m */,
+				6397F8DA1C3D892200CFAD51 /* SKTPath.h */,
+				63D368801C3F03CB00F777E6 /* SKTPath.m */,
+				63D368811C3F03CB00F777E6 /* SKTPathAtom.h */,
+				63D368821C3F03CB00F777E6 /* SKTPathAtom.m */,
+				63D368831C3F03CB00F777E6 /* SKTPoly.h */,
+				63D368841C3F03CB00F777E6 /* SKTPoly.m */,
+				63D368851C3F03CB00F777E6 /* SKTRectangle.h */,
+				63D368861C3F03CB00F777E6 /* SKTRectangle.m */,
+				63D368871C3F03CB00F777E6 /* SKTText.h */,
+				63D368881C3F03CB00F777E6 /* SKTText.m */,
+				63D368891C3F03CB00F777E6 /* SKTVertex.h */,
+				63D3688A1C3F03CB00F777E6 /* SKTVertex.m */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		63D4C2511C3DB35400EE1EE3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				63D4C2521C3DB35400EE1EE3 /* Arrow.png */,
+				63D4C2681C3DBB1200EE1EE3 /* Arrow8.png */,
+				63EF61C625C22D5A00392D9E /* ArrowMove2.png */,
+				63EF61C725C22D5A00392D9E /* ArrowNode.png */,
+				63EF61D425C325B300392D9E /* ArrowNode8.png */,
+				63D4C2531C3DB35400EE1EE3 /* Circle.png */,
+				63D4C2541C3DB35400EE1EE3 /* Circle8.png */,
+				63D4C2551C3DB35400EE1EE3 /* Cross.png */,
+				63EF619E25C0C94F00392D9E /* DocIcon.icns */,
+				63EF61D025C3234700392D9E /* Exterior.png */,
+				63EF61CF25C3234700392D9E /* Exterior8.png */,
+				63D4C2561C3DB35400EE1EE3 /* Line.png */,
+				63D4C2571C3DB35400EE1EE3 /* Line8.png */,
+				63EF61C525C22D5A00392D9E /* NodeMove.png */,
+				63D4C2581C3DB35400EE1EE3 /* Rectangle.png */,
+				63D4C2591C3DB35400EE1EE3 /* Rectangle8.png */,
+				63EF61A125C0CC6D00392D9E /* SVGIcon.icns */,
+				63D4C25A1C3DB35400EE1EE3 /* TextGraphic.png */,
+				63D4C26A1C3DBB1B00EE1EE3 /* TextGraphic8.png */,
+				63D4C2641C3DB8D000EE1EE3 /* Triangle.png */,
+				63D4C2651C3DB8D000EE1EE3 /* Triangle8.png */,
+				63EF61C325C22D5A00392D9E /* ZoomIn.png */,
+				63EF61C425C22D5A00392D9E /* ZoomOut.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		63EF61AA25C1D45E00392D9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6375A4A425CA452300E758CA /* UniformTypeIdentifiers.framework */,
+				63EF61AB25C1D45E00392D9E /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		38D54A3607D51A2A00514CB8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D3688F1C3F03CB00F777E6 /* SKTGraphicsOwner.h in Headers */,
+				63D368A01C3F03CB00F777E6 /* SKTVertex.h in Headers */,
+				63D368951C3F03CB00F777E6 /* SKTLine.h in Headers */,
+				6339A1371C39E72F0048A619 /* SKTError.h in Headers */,
+				63D3688B1C3F03CB00F777E6 /* SKTEllipse.h in Headers */,
+				6339A14C1C39E72F0048A619 /* SKTToolPaletteController.h in Headers */,
+				63D3686A1C3ED3DD00F777E6 /* NSColor_SKT.h in Headers */,
+				63D3689E1C3F03CB00F777E6 /* SKTText.h in Headers */,
+				6339A1311C39E72F0048A619 /* SKTAppDelegate.h in Headers */,
+				6339A1451C39E72F0048A619 /* SKTPrefix.h in Headers */,
+				639DD65E1C3C029700E75D10 /* SKTDocumentSVG.h in Headers */,
+				6339A1351C39E72F0048A619 /* SKTDocument.h in Headers */,
+				63D368931C3F03CB00F777E6 /* SKTImage.h in Headers */,
+				6339A1921C3B7AFF0048A619 /* GDataDefines.h in Headers */,
+				63D368981C3F03CB00F777E6 /* SKTPathAtom.h in Headers */,
+				6397F8DC1C3D892200CFAD51 /* SKTPath.h in Headers */,
+				63D3688D1C3F03CB00F777E6 /* SKTGraphic.h in Headers */,
+				6339A14E1C39E72F0048A619 /* SKTWindowController.h in Headers */,
+				6339A1501C39E72F0048A619 /* SKTZoomingScrollView.h in Headers */,
+				63D368681C3ED3DD00F777E6 /* NSArray_SKT.h in Headers */,
+				6339A13B1C39E72F0048A619 /* SKTGraphicView.h in Headers */,
+				6339A13D1C39E72F0048A619 /* SKTGrid.h in Headers */,
+				63D3689C1C3F03CB00F777E6 /* SKTRectangle.h in Headers */,
+				6339A1931C3B7AFF0048A619 /* GDataXMLNode.h in Headers */,
+				63D3689A1C3F03CB00F777E6 /* SKTPoly.h in Headers */,
+				6339A1481C39E72F0048A619 /* SKTRenderingView.h in Headers */,
+				6329555825C5DB0B007ED8FC /* SKTPathScanner.h in Headers */,
+				63D368911C3F03CB00F777E6 /* SKTGroup.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		38D54A3507D51A2A00514CB8 /* FloorSketch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3833E1970889EBD20049736A /* Build configuration list for PBXNativeTarget "FloorSketch" */;
+			buildPhases = (
+				38D54A3607D51A2A00514CB8 /* Headers */,
+				38D54A4807D51A2A00514CB8 /* Resources */,
+				38D54A6007D51A2A00514CB8 /* Sources */,
+				38D54A7207D51A2A00514CB8 /* Frameworks */,
+				38D54A7407D51A2A00514CB8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FloorSketch;
+			productName = FloorSketch;
+			productReference = 38D54A7607D51A2A00514CB8 /* FloorSketch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A3ECED7FE888A39C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+			};
+			buildConfigurationList = 3833E1A30889EBD20049736A /* Build configuration list for PBXProject "FloorSketch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A3ECED8FE888A39C02AAC07 /* FloorSketch */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38D54A3507D51A2A00514CB8 /* FloorSketch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38D54A4807D51A2A00514CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D4C2601C3DB35400EE1EE3 /* Line8.png in Resources */,
+				63EF61CB25C22D5A00392D9E /* ArrowMove2.png in Resources */,
+				6339A17F1C39E7B20048A619 /* FloorSketch.sdef in Resources */,
+				63D4C25C1C3DB35400EE1EE3 /* Circle.png in Resources */,
+				634E925A25C0B4CB00DD59AE /* Images.xcassets in Resources */,
+				63D4C2661C3DB8D000EE1EE3 /* Triangle.png in Resources */,
+				63EF61BE25C1DB6100392D9E /* UndoStrings.strings in Resources */,
+				63D4C2611C3DB35400EE1EE3 /* Rectangle.png in Resources */,
+				6339A1731C39E7B20048A619 /* Preferences.xib in Resources */,
+				6339A17B1C39E7B20048A619 /* SKTError.strings in Resources */,
+				63EF61C925C22D5A00392D9E /* ZoomOut.png in Resources */,
+				63D4C2621C3DB35400EE1EE3 /* Rectangle8.png in Resources */,
+				6339A1711C39E7B20048A619 /* GridPanel.xib in Resources */,
+				63D4C25F1C3DB35400EE1EE3 /* Line.png in Resources */,
+				63D4C26B1C3DBB1B00EE1EE3 /* TextGraphic8.png in Resources */,
+				63EF61CC25C22D5A00392D9E /* ArrowNode.png in Resources */,
+				6339A1721C39E7B20048A619 /* Inspector.xib in Resources */,
+				63EF61D525C325B300392D9E /* ArrowNode8.png in Resources */,
+				63EF61D225C3234700392D9E /* Exterior.png in Resources */,
+				63D4C25E1C3DB35400EE1EE3 /* Cross.png in Resources */,
+				63D4C2631C3DB35400EE1EE3 /* TextGraphic.png in Resources */,
+				63EF61BA25C1DB5C00392D9E /* SKTZoomingScrollView.strings in Resources */,
+				63EF61C825C22D5A00392D9E /* ZoomIn.png in Resources */,
+				63EF61B625C1DB4F00392D9E /* MenuItems.strings in Resources */,
+				6339A1791C39E7B20048A619 /* InfoPlist.strings in Resources */,
+				63D4C25D1C3DB35400EE1EE3 /* Circle8.png in Resources */,
+				63D4C2691C3DBB1200EE1EE3 /* Arrow8.png in Resources */,
+				6339A1811C39E7B20048A619 /* ToolPalette.xib in Resources */,
+				63EF61D125C3234700392D9E /* Exterior8.png in Resources */,
+				63D368721C3EFF8300F777E6 /* GraphicClassNames.strings in Resources */,
+				63EF619F25C0C94F00392D9E /* DocIcon.icns in Resources */,
+				63D4C2671C3DB8D000EE1EE3 /* Triangle8.png in Resources */,
+				63D4C25B1C3DB35400EE1EE3 /* Arrow.png in Resources */,
+				63EF61CA25C22D5A00392D9E /* NodeMove.png in Resources */,
+				6339A1781C39E7B20048A619 /* DrawWindow.xib in Resources */,
+				63EF61A225C0CC6D00392D9E /* SVGIcon.icns in Resources */,
+				6339A1701C39E7B20048A619 /* FloorSketch.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38D54A7407D51A2A00514CB8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# This shell-script build phase happens only when installing and causes the \n# project sources (which are shipped as an example) to be installed.\n\nEXAMPLESDIR=${SYSTEM_DEVELOPER_DIR}/Examples\n\n# install the source\nxcodebuild installsrc \"SYMROOT=${SYMROOT}\" \"OBJROOT=${OBJROOT}\" \"DSTROOT=${DSTROOT}\" \"SRCROOT=${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME}\"\n\n# strip out garbage\nfind ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME} -name \"*~\" -exec rm -rf {} \\; -prune ; \nfind ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME} -name \"*~.*\" -exec rm -rf {} \\; -prune ; \nfind ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME} -type d -name \"CVS\" -exec rm -rf {} \\; -prune ;\nfind ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME} -name \"*.pbxuser\" -exec rm -rf {} \\; ;\nfind ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME} -name \"*.perspective\" -exec rm -rf {} \\; ;\nfind ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME} -name \"*.mode[1234567890]\" -exec rm -rf {} \\; ;\nfind ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME} -name \"*.mode[1234567890]v[1234567890]\" -exec rm -rf {} \\; ;\nfind ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME} -name \".nfs*\" -exec rm -rf {} \\; ;\nfind ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME} -name \".gdb*\" -exec rm -rf {} \\; ;\nfind ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME} -name \".#*\" -exec rm -rf {} \\; ;\nfind ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME} -name \".DS_Store\" -exec rm -rf {} \\; ;\nrm -rf ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME}/build\n\n# set permissions\nchmod -R u+rwX,go+rX,go-w ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME}\nchown -R ${INSTALL_OWNER}:${INSTALL_GROUP} ${DSTROOT}${EXAMPLESDIR}/${PRODUCT_NAME}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38D54A6007D51A2A00514CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6339A13C1C39E72F0048A619 /* SKTGraphicView.m in Sources */,
+				63D368631C3ED32400F777E6 /* NSColor_SKTScripting.m in Sources */,
+				633ADBA81C40854700BCA626 /* SKTAlignCommand.m in Sources */,
+				6339A1941C3B7AFF0048A619 /* GDataXMLNode.m in Sources */,
+				63D368691C3ED3DD00F777E6 /* NSArray_SKT.m in Sources */,
+				6339A1361C39E72F0048A619 /* SKTDocument.m in Sources */,
+				6339A1441C39E72F0048A619 /* SKTMain.m in Sources */,
+				6339A14D1C39E72F0048A619 /* SKTToolPaletteController.m in Sources */,
+				63D368901C3F03CB00F777E6 /* SKTGraphicsOwner.m in Sources */,
+				63D368921C3F03CB00F777E6 /* SKTGroup.m in Sources */,
+				63D3688C1C3F03CB00F777E6 /* SKTEllipse.m in Sources */,
+				6339A13E1C39E72F0048A619 /* SKTGrid.m in Sources */,
+				63D3686B1C3ED3DD00F777E6 /* NSColor_SKT.m in Sources */,
+				6339A1321C39E72F0048A619 /* SKTAppDelegate.m in Sources */,
+				63D368A11C3F03CB00F777E6 /* SKTVertex.m in Sources */,
+				6339A1511C39E72F0048A619 /* SKTZoomingScrollView.m in Sources */,
+				63D368991C3F03CB00F777E6 /* SKTPathAtom.m in Sources */,
+				63D368941C3F03CB00F777E6 /* SKTImage.m in Sources */,
+				6339A1381C39E72F0048A619 /* SKTError.m in Sources */,
+				6329555925C5DB0B007ED8FC /* SKTPathScanner.m in Sources */,
+				6339A1491C39E72F0048A619 /* SKTRenderingView.m in Sources */,
+				6394DD741C40678B0041E7AD /* SKTUngroupCommand.m in Sources */,
+				63D3689B1C3F03CB00F777E6 /* SKTPoly.m in Sources */,
+				6339A14F1C39E72F0048A619 /* SKTWindowController.m in Sources */,
+				63D3689D1C3F03CB00F777E6 /* SKTRectangle.m in Sources */,
+				63D368961C3F03CB00F777E6 /* SKTLine.m in Sources */,
+				63D368971C3F03CB00F777E6 /* SKTPath.m in Sources */,
+				63D3689F1C3F03CB00F777E6 /* SKTText.m in Sources */,
+				63D3688E1C3F03CB00F777E6 /* SKTGraphic.m in Sources */,
+				639DD65F1C3C029700E75D10 /* SKTDocumentSVG.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6339A1561C39E7B20048A619 /* FloorSketch.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6339A1571C39E7B20048A619 /* Base */,
+			);
+			name = FloorSketch.xib;
+			sourceTree = "<group>";
+		};
+		6339A1581C39E7B20048A619 /* GridPanel.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6339A1591C39E7B20048A619 /* Base */,
+			);
+			name = GridPanel.xib;
+			sourceTree = "<group>";
+		};
+		6339A15A1C39E7B20048A619 /* Inspector.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6339A15B1C39E7B20048A619 /* Base */,
+			);
+			name = Inspector.xib;
+			sourceTree = "<group>";
+		};
+		6339A15C1C39E7B20048A619 /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6339A15D1C39E7B20048A619 /* Base */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+		6339A1631C39E7B20048A619 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6385361D245A2940007597BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6339A1671C39E7B20048A619 /* SKTError.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6385361E245A2940007597BA /* en */,
+			);
+			name = SKTError.strings;
+			sourceTree = "<group>";
+		};
+		63D368701C3EFF8300F777E6 /* GraphicClassNames.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6385361C245A2940007597BA /* en */,
+			);
+			name = GraphicClassNames.strings;
+			sourceTree = "<group>";
+		};
+		63EF61B825C1DB4F00392D9E /* MenuItems.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63EF61B725C1DB4F00392D9E /* en */,
+			);
+			name = MenuItems.strings;
+			sourceTree = "<group>";
+		};
+		63EF61BC25C1DB5C00392D9E /* SKTZoomingScrollView.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63EF61BB25C1DB5C00392D9E /* en */,
+			);
+			name = SKTZoomingScrollView.strings;
+			sourceTree = "<group>";
+		};
+		63EF61C025C1DB6100392D9E /* UndoStrings.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63EF61BF25C1DB6100392D9E /* en */,
+			);
+			name = UndoStrings.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3833E1980889EBD20049736A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Classes/SKTPrefix.h;
+				INFOPLIST_FILE = Resources/SKTInfo.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 0.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.turbozen.FloorSketch;
+				PRODUCT_NAME = FloorSketch;
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = "-Wall";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3833E1990889EBD20049736A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Classes/SKTPrefix.h;
+				INFOPLIST_FILE = Resources/SKTInfo.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.turbozen.FloorSketch;
+				PRODUCT_NAME = FloorSketch;
+				VERSIONING_SYSTEM = "apple-generic";
+				WARNING_CFLAGS = "-Wall";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3833E1A40889EBD20049736A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lxml2";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3833E1A50889EBD20049736A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				OTHER_LDFLAGS = "-lxml2";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3833E1970889EBD20049736A /* Build configuration list for PBXNativeTarget "FloorSketch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3833E1980889EBD20049736A /* Debug */,
+				3833E1990889EBD20049736A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3833E1A30889EBD20049736A /* Build configuration list for PBXProject "FloorSketch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3833E1A40889EBD20049736A /* Debug */,
+				3833E1A50889EBD20049736A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A3ECED7FE888A39C02AAC07 /* Project object */;
+}

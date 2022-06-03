@@ -1,0 +1,47 @@
+/* SKTUnknownFileReadError */
+
+/* In FloorSketch this particular localized description won't be presented to the user, but it's always a good idea to provide a decent description that's a full sentence, just in case the error gets reused in a new way. */
+"description1" = "FloorSketch document data could not be read because it is corrupted.";
+
+/* In FloorSketch this localized failure reason will be presented to the user if we're trying to open a document. When -[SKTDocument readFromData:ofType:error:] returns an error NSDocumentController will take the failure reason and tack it onto the end of a "The document "so-and-so" could not be opened." message and use the whole thing as an error description. Full sentence! */
+"failureReason1" = "It appears to be corrupted.";
+
+/* SKTUnknownPasteboardReadError */
+
+/* In FloorSketch this localized description will be presented to the user by -[SKTGraphicView paste:]. */
+"description2" = "FloorSketch pasteboard data could not be read for an unknown reason.";
+
+/* In FloorSketch this particular localized failure reason won't be presented to the user, but it's always a good idea to provide a decent failure reason that's a full sentence, just in case the error gets reused in a new way. */
+"failureReason2" = "An unknown error occured.";
+
+/* SKTWriteCouldntMakeTIFFError */
+
+/* In FloorSketch this particular localized description won't be presented to the user, but it's always a good idea to provide a decent description that's a full sentence, just in case the error gets reused in a new way. */
+"description3" = "A TIFF image could not be made because it would be empty.";
+
+/* In FloorSketch this localized failure reason will be presented to the user. When -[SKTDocument dataOfType:error:] returns an error NSDocument will take the error reason and tack it onto the end of a "The document "so-and-so" could not be saved." message and use the whole thing as an error description. Full sentence! */
+"failureReason3" = "The TIFF image would be empty.";
+
+/* SKTWriteCouldntMakePNGError */
+
+/* In FloorSketch this particular localized description won't be presented to the user, but it's always a good idea to provide a decent description that's a full sentence, just in case the error gets reused in a new way. */
+"description4" = "A PNG image could not be made because it would be empty.";
+
+/* In FloorSketch this localized failure reason will be presented to the user. When -[SKTDocument dataOfType:error:] returns an error NSDocument will take the error reason and tack it onto the end of a "The document "so-and-so" could not be saved." message and use the whole thing as an error description. Full sentence! */
+"failureReason4" = "The PNG image would be empty.";
+
+/* A scripting error message. */
+"You can't remove the fill from this kind of graphic." = "You can't remove the fill from this kind of graphic.";
+
+/* A scripting error message. */
+"You can't remove the stroke from this kind of graphic." = "You can't remove the stroke from this kind of graphic.";
+
+/* A scripting error message. */
+"You can't set the fill color of this kind of graphic." = "You can't set the fill color of this kind of graphic.";
+
+/* A scripting error message. */
+"You can't set the stroke color of this kind of graphic." = "You can't set the stroke color of this kind of graphic.";
+
+/* A scripting error message. */
+"You can't set the stroke thickness of this kind of graphic." = "You can't set the stroke thickness of this kind of graphic.";
+
